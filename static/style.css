@@ -1,0 +1,67 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(Calda.gif);
+    background-size: cover;
+    background-position: center;
+}  
+.container{
+    max-width: 930px;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+div{
+    background-image:url(Choco_ghosttwo.png);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px black;
+}
+h1{
+    text-align: center;
+    color: #3a2518;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    margin: auto
+}
+input,button{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    border: 1px solid #aa9283;
+}
+button, .botao-bolo{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color:#CFBBAF;
+    text-align: center;
+    color: #473428;
+    cursor: pointer;
+}
+a{
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px;
+}
+button:hover, .botao-bolo:hover{
+    background-color: #886E5F;
+    font-size: 17px;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+}
+table, th, td{
+    border: 1px solid #ffffff;
+}
+td, th{
+    background-color: #f2f2f285;
+    padding: 10px;
+    text-align: center;
+}

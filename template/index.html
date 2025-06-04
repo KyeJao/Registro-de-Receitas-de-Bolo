@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Receitas de Receitas</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de bolos</h1>
+        <form action="/salvar" method="post">
+            <input type="text" name="nomeBolo" placeholder="Nome do Bolo" required>
+            <br>
+            
+            <input type="url" name="imgBolo" placeholder="URL da imagem do Bolo" required>
+            <br>
+            <input type="text" name="ingredientes" placeholder="1° Ingrediente do Bolo" required>
+            <br>
+            <input type="text" name="ingredientes2" placeholder="2° Ingrediente do Bolo" required>
+            <br>
+            <input type="text" name="ingredientes3" placeholder="3° Ingrediente do Bolo" required>
+            <br>
+            <input type="text" name="ingredientes4" placeholder="4° Ingrediente do Bolo" required>
+            <br>
+            <input type="text" name="ingredientes5" placeholder="5° Ingrediente do Bolo" required>
+            <br>
+            <button type="submit">Salvar Receita</button>
+        </form>
+        <a href="tabela.html" class="botao-bolo">Ver tabela</a>
+        <br>
+    </div>
+</body>
+</html>
