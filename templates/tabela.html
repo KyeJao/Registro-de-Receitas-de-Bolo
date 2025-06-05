@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com os Bolos</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabela de Receitas</h1>
+        <table>
+            <tr>
+                <th>
+                    Nome do Bolo
+                </th>
+            
+                <th>
+                    Imagem do Bolo
+                </th>
+                <th>
+                    1°ingrediente
+                </th>
+                
+                <th>
+                    2°ingrediente
+                </th>
+            
+                <th>
+                    3°ingrediente
+                </th>
+                <th>
+                    4°ingrediente
+                </th>
+                <th>
+                    5°ingrediente
+                </th>
+            </tr>
+            {% for nomeBolo,imgBolo,ingredientes,ingredientes2,ingredientes3,ingredientes4,ingredientes5 in dados%}
+            <tr>
+                <td>
+                    {{nomeBolo}}
+                </td>
+            
+                <td>
+                    <img src="{{imgBolo}}" alt = '' width = '120px' height = '120px'>
+                </td>
+                <td>
+                    {{ingredientes}}
+                </td>
+            
+                <td>
+                    {{ingredientes2}}
+                </td>
+            
+                <td>
+                    {{ingredientes3}}
+                </td>
+                <td>
+                    {{ingredientes4}}
+                </td>
+                <td>
+                    {{ingredientes5}}
+                </td>
+            </tr>
+            {%endfor%}
+        </table>
+        <br>
+        <a href="/" class="botao-bolo">Voltar ao Cadastro</a>
+        <br>
+    </div>
+    
+</body>
+</html>
